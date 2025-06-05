@@ -1,2 +1,2 @@
 # dctcontrichy.com
- A website and admin panel for dctcon.
+ A website and an admin panel for dctcon.

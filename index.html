@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Home
+	</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+	body{
+		font-family:Inter,"Source Sans Pro",Helvetica,Arial,sans-serif !important;
+	}
+	.navbar-nav .nav-item .nav-link{
+		margin: 6px 36px;
+		font-size: 15px;
+		color: black;
+	}
+	.navbar-nav .nav-item .nav-link.active{
+		color: #7a00ff;
+	}
+	.navbar-nav .nav-item .nav-link {
+		position: relative;
+	}
+	.navbar-nav .nav-item .nav-link:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1.5px;
+		bottom: 0;
+		margin: 0px;
+		background-color: #7a00ff;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.4s ease-in-out 0s;
+	}
+	.navbar-nav .nav-item .nav-link:hover {
+		color: #7a00ff;
+	}
+	.navbar-nav .nav-item .nav-link:hover:before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
+	.highlight-button {
+		box-shadow: 0 0 15px royalblue;
+		animation: pulse 1.5s infinite;
+		font-weight: bold;
+		border: 5px solid royalblue;
+		padding: 18px 25px;
+		border-radius: 18px;
+		font-size: 35px;
+		background: none;
+		color: royalblue;
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+			box-shadow: 0 0 15px royalblue;
+		}
+		50% {
+			transform: scale(1.05);
+			box-shadow: 0 0 25px royalblue;
+		}
+		100% {
+			transform: scale(1);
+			box-shadow: 0 0 15px royalblue;
+		}
+	}
+	</style>
+</head>
+<body style="background: #9ba3ff no-repeat 0 50%;color:black;cursor: pointer;">
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark navbar-light" style="background-color: #edf9ff !important;color: black !important;">
+			<a class="navbar-brand" href="#">
+				<img src="images/toplogo.jpeg" alt="Logo" style="width:90px;" class="rounded-pill">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+							<i class="fa fa-home"></i> Home
+						</a>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="our-conference">
+							<i class="fa fa-user-tie"></i> Our Conference
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery">
+							<i class="fa fa-images"></i> Gallery
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="videos">
+							<i class="fa fa-video"></i> Videos
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacts">
+							<i class="fa fa-phone"></i> Contacts
+						</a>
+					</li>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="register">
+							<i class="fa fa-book"></i> Register
+						</a>
+					</li>
+
+					
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="m-3 card card-body p-0">
+		<div class="p-3">
+			<img src="images/logo.jpg" alt="Logo" style="width:18%;" class="rounded-pill">
+			<img src="images/headerimg.png" style="width: 78%;" class="mt-3 mb-3">
+			<div class="p-3" align="center">
+				<a href="register" class="btn btn-lg btn-primary highlight-button">
+					<i class="fa fa-book"></i> &nbsp;Register
+				</a>
+			</div>
+			<!-- <h1 class="mt-3 mb-3" align="center" style="font-weight: 530;">
+				Relive the magic of CLINICON 2024 with my latest photos! It was truly special, and I can’t wait for you to experience it through my lens.<br><span style="font-size:30px;font-weight:300px;color:royalblue;" onclick="window.open('https://memzo.co/m/CLINICON-2024306/13796','_self')">#Wanderlust &nbsp; #TripHighlights &nbsp; #JourneyOfALifetime &nbsp; #ExploreWithMe &nbsp; #GalaMoments</span>
+			</h1> -->
+			<h1 class="mt-5 mb-3" align="center" style="font-weight: 530;">
+				Curtain Raiser of the Grand 14th Annual Professional Conference of the Diabetes Club of Tiruchirappalli - DCTCON 2024
+			</h1>
+			<h2 class="mt-5 mb-5" align="center">
+				<span style="border-bottom: 5px solid #9ba3ff;padding: 6px 0px;font-weight: 530;">
+					OUR ENVISION
+				</span>
+			</h2>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				To ensure that the Diabetologists, Physicians and General Practitioners of Trichy stay abreast on the latest Evidence-based Outcomes on Diabetes Research from around the World.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				To enhance and disseminate knowledge on understanding Diabetes and its associated Complications through regular CME Workshops, Seminars, Public Outreach Programs and Detection Campaigns.
+			</h3>
+			<img src="images/homeimage1.jpg" style="width: 100%;height: 100%;" class="mt-3 mb-3">
+			<h2 class="mt-5 mb-5" align="center">
+				<span style="border-bottom: 5px solid #9ba3ff;padding: 6px 0px;font-weight: 530;">
+					OBJECTIVES
+				</span>
+			</h2>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				The Diabetes Club of Tiruchirappalli is a distinguished Academic Forum dedicated to achieving excellence in the field of Diabetes by actively Organizingvarious Health Education Programmes for Medical Practitioners and the General Public. Our Inter-Professional Team of Experts collaborates to share their expertise in Diabetes Care, aiming to implement best Practices and introduce new tools to enhance the delivery of streamlined services.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				Our Mission is to foster Academic interest, Fellowship andSolidaritywithin the Medical Community, particularly in the realm of Diabetology.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				We aim to provide comprehensive Medical Aid and support to benefit underprivileged Populations, regardless of their background and are dedicated to promoting Health Education and well-being among the vulnerable Community.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				Our initiatives encompass creating a Library exclusively for Members, acquiringcutting-edge Medical Equipment, hosting Conferences and sponsoring Members forTraining and Research Events in Diabetology, offering financial assistance to impoverished Patients and awardingScholarships and Stipends to deserving Medical Students.
+			</h3>
+			<img src="images/homeimage2.jpg" style="width: 100%;height: 100%;" class="mt-3 mb-3">
+			<h2 class="mt-5 mb-5" align="center">
+				<span style="border-bottom: 5px solid #9ba3ff;padding: 6px 0px;font-weight: 530;">
+					HONOUR
+				</span>
+			</h2>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				Since its inception in 2009, the Diabetes Club of Tiruchirappalli, recognized under the Societies Act, has ceaselessly pursued its Goal. This remarkable Journey has been made possible by the unwavering support of Our respected Patrons, Executive Members and devoted DCT Members.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				The establishment of DCT was Orchestrated by a distinguished team of experienced Senior Physicians, led by the Legendary Clinician Late Dr.B.Bosco, alongside esteemed colleagues Dr.G.Surendra Babu, Dr.S.Sethuraman, Dr.N.S.Prasad, Dr.ML.Balamurugan, Dr.V.Ravindranath and Dr.R.Vijayakumar are all resolutely enthusiastic about realizing the Noble Quest of DCT.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				Contemplating the Educational voyage of DCT, We are privileged to have had Dr.B.Bosco as the Inaugural Chairman, Dr.N.S.Prasad as the Secretary andrevered Patrons Dr.S.Ponniah, Dr.M.S.Ashraf and Dr.M.Shunmugvelu lending their Wisdom and guiding Our path. Their leadership and support have been instrumental in shaping the success of Our Organization.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				The 1st Scientific Symposium was gracefully inaugurated by Our iconic Dr.M.S.Ashraf, where renowned Cardiologist Dr.M.Chenniappan captivated the audience with his enlightening presentation. More than 50 Physicians were gathered at the initial meeting and EC Members were meticulously chosen from among the Delegates in attendance. This ensures that Our Institution is a Hub of exceptional Caliber and Expertise.
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				It's delightful and a source of great pride that Our Club has seen a significant rise in its Life Membership reaching 160 Members enrolled thus far. Our Vision is Ambitious, yet Achievable and We are committed to making a difference.
+			</h3>
+			<img src="images/homeimage3.jpg" style="width: 100%;height: 100%;" class="mt-3 mb-3">
+			<h2 class="mt-5 mb-5" align="center">
+				<span style="border-bottom: 5px solid #9ba3ff;padding: 6px 0px;font-weight: 530;">
+					ACTIVITIES AND EVENTS
+				</span>
+			</h2>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				<ul>
+					<li>
+						Every 2nd Tuesday of the Month is dedicated to the CME Programs discussing different aspects of Diabetes and Complications by Healthcare Professionals.
+					</li>
+					<li>
+						The Annual Professional Conference DCTCON is being conducted every Year.
+					</li>
+				</ul>
+			</h3>
+			<h3 class="mt-4 mb-4" style="text-align: justify;padding: 3px 15px;line-height: 39px;letter-spacing:1.5px;word-spacing:3px;">
+				DCTCON is a banquet of Scientific knowledge, Networking andInnovationcentered around the latest advancements in Diabetes Research and Treatment. The Objective we hold dear is one of Exquisite Elegance and Unwavering Persuasion.
+			</h3>
+			<div class="card card-body">
+				<div class="row" class="mb-5 mt-5">
+					<div class="col-lg-4 mb-3">
+						<h2>PATRONS</h2>
+						<h4>Dr.S.Ponnaiah</h4>
+						<h4>Dr.M.S.Ashraf</h4>
+						<h4>Dr.M.Shunmugavelu</h4>
+						<h4>Dr.Gunasekaran</h4>
+						<h4>Dr.N.S.Prasad</h4>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<h2>CHAIRMAN</h2>
+						<h4>Dr.M.L.Balamurugan</h4>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<h2>Vice Chairman</h2>
+						<h4>Dr.M.Senthilvel</h4>
+					</div>
+				</div>
+				<br>
+				<div class="row" class="mb-5 mt-5">
+					<div class="col-lg-4 mb-3">
+						<h2>SECRETARY</h2>
+						<h4>Dr.L.Muthumani</h4>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<h2>JOINT SECRETARY</h2>
+						<h4>Dr.S.Benedict</h4>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<h2>TREASURER</h2>
+						<h4>Dr.R.Vijayakumar</h4>
+					</div>
+				</div>
+				<br>
+				<div class="row" class="mb-5 mt-5">
+					<div class="col-lg-4 mb-3">
+						<h2>ADVISORY COMMITTEE</h2>
+						<h4>Dr.V.Ravindranath</h4>
+						<h4>Dr.R.Ramesh</h4>
+						<h4>Dr.S.Sethuraman</h4>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<h2>EC MEMBERS</h2>
+						<h4>Dr.A.Velayutharaj</h4>
+						<h4>Dr.M,Ulaganathan</h4>
+						<h4>Dr.A.gregory</h4>
+						<h4>Dr.K.S.Saravanan</h4>
+						<h4>Dr.K.Kanagasandhosh</h4>
+						<h4>Dr.R.T.Maniraj</h4>
+						<h4>Co opt,Members</h4>
+						<h4>Dr.M. Chandramohan</h4>
+						<h4>Dr.P.Sankar</h4>
+						<h4>Dr.D Kannan</h4>
+						<h4>Dr.K.Rajamohammed</h4>
+						<h4>Dr.T.MPrabhu</h4>
+					</div>
+					<div class="col-lg-4 mb-3">
+						<h2>Volunteer Committee</h2>
+						<h4>Dr.P.Kalaiyarasan</h4>
+						<h4>Dr.M. Sivakumar</h4>
+						<h4>Dr.P.Cholan</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="jumbotron mb-0" style="background-color: #edf9ff !important;padding-bottom: 10px;">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1 style="color: black !important;font-size: 32px;font-weight: bold;">
+						<i class="fa fa-home"></i> ADDRESS:
+					</h1>
+					<span>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							Annai Hospital
+						</p>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							Thuraiyur
+						</p>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							Trichy Tamil Nadu 621010
+						</p>
+					</span>
+				</div>
+				<div class="col-lg-6">
+					<h1 style="color: black !important;font-size: 32px;font-weight: bold;">
+						<i class="fa fa-envelope"></i> Email id:
+					</h1>
+					<span>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							<a href="mailto:metclubkmu@gmail.com" style="text-decoration: none;color: black !important;">
+								trichydct@gmail.com
+							</a>
+						</p>
+					</span>
+				</div>
+				<div class="col-lg-6">
+					<h1 style="color: black !important;font-size: 32px;font-weight: bold;">
+						<i class="fa fa-phone"></i> PHONE NO:
+					</h1>
+					<span>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							+91 98424 44036
+						</p>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							+91 99441 13233
+						</p>
+					</span>
+				</div>
+			</div>
+			<p style="font-size: 18px;text-align: center;color: black !important;">
+				&copy; <script>document.write(new Date().getFullYear())</script> DCTCON All rights reserved.
+			</p>
+		</div>
+	</footer>
+	<style type="text/css">
+	#scroll-to-bottom-btn {
+		position: fixed;
+		bottom: 45px;
+		right: 20px;
+		display: block;
+		z-index: 999999;
+	}
+	#scroll-to-top-btn {
+		position: fixed;
+		bottom: 90px;
+		right: 20px;
+		display: none;
+		z-index: 999999;
+	}
+	</style>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#scroll-to-top-btn').fadeIn();
+			}
+			else {
+				$('#scroll-to-top-btn').fadeOut();
+			}
+			if ($(this).scrollTop() + $(this).height() === $(document).height()) {
+				$('#scroll-to-bottom-btn').fadeOut();
+			}
+			else {
+				$('#scroll-to-bottom-btn').fadeIn();
+			}
+		});
+
+		$('#scroll-to-bottom-btn').click(function () {
+			$('html, body').animate({ scrollTop: $(document).height() }, 3000);
+		});
+
+		$('#scroll-to-top-btn').click(function () {
+			$('html, body').animate({ scrollTop: 0 }, 3000);
+		});
+	});
+	</script>
+	<button id="scroll-to-top-btn" class="btn btn-sm btn-primary" style="text-align: center;">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 18px;height: 18px;" fill="#fff"><path d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
+	</button>
+	<button id="scroll-to-bottom-btn" class="btn btn-sm btn-primary" style="text-align: center;">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 18px;height: 18px;" fill="#fff"><path d="M2 334.5c-3.8 8.8-2 19 4.6 26l136 144c4.5 4.8 10.8 7.5 17.4 7.5s12.9-2.7 17.4-7.5l136-144c6.6-7 8.4-17.2 4.6-26s-12.5-14.5-22-14.5l-72 0 0-288c0-17.7-14.3-32-32-32L128 0C110.3 0 96 14.3 96 32l0 288-72 0c-9.6 0-18.2 5.7-22 14.5z"/></svg>
+	</button>
+</body>
+</html>

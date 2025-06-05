@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Gallery
+	</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+	body{
+		font-family:Inter,"Source Sans Pro",Helvetica,Arial,sans-serif !important;
+	}
+	.navbar-nav .nav-item .nav-link{
+		margin: 6px 36px;
+		font-size: 15px;
+		color: black;
+	}
+	.navbar-nav .nav-item .nav-link.active{
+		color: #7a00ff;
+	}
+	.navbar-nav .nav-item .nav-link {
+		position: relative;
+	}
+	.navbar-nav .nav-item .nav-link:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1.5px;
+		bottom: 0;
+		margin: 0px;
+		background-color: #7a00ff;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.4s ease-in-out 0s;
+	}
+	.navbar-nav .nav-item .nav-link:hover {
+		color: #7a00ff;
+	}
+	.navbar-nav .nav-item .nav-link:hover:before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
+	.gallery img:hover{
+		transform: scale(1.1);
+		transition: all 1s ease-in-out 0s;
+	}
+	</style>
+</head>
+<body style="background: #9ba3ff no-repeat 0 50%;color:black;cursor: pointer;">
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark navbar-light" style="background-color: #edf9ff !important;color: black !important;">
+			<a class="navbar-brand" href="../">
+				<img src="../images/toplogo.jpeg" alt="Logo" style="width:90px;" class="rounded-pill">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="../">
+							<i class="fa fa-home"></i> Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../our-conference">
+							<i class="fa fa-user-tie"></i> Our Conference
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+							<i class="fa fa-images"></i> Gallery
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../videos">
+							<i class="fa fa-video"></i> Videos
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../contacts">
+							<i class="fa fa-phone"></i> Contacts
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../register">
+							<i class="fa fa-book"></i> Register
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="m-3 card card-body p-0">
+		<div class="p-3">
+			<img src="../images/logo.jpg" alt="Logo" style="width:18%;" class="rounded-pill">
+			<img src="../images/headerimg.png" style="width: 78%;" class="mt-3 mb-3">
+			<section class="container">
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Chawla 2021 MS Expert group recommendations on bolus insulin use in  T2D
+					</span>
+				</h1>
+				<iframe src="../images/Chawla 2021 MS_Expert group recommendations on bolus insulin use in  T2D.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Expert Opinion by Clinicians on the Use of Insulin Therapy
+					</span>
+				</h1>
+				<iframe src="../images/Expert Opinion by Clinicians on the Use of Insulin Therapy.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Practical guidance on insulin injection practice in diabetes self-management
+					</span>
+				</h1>
+				<iframe src="../images/Practical guidance on insulin injection practice in diabetes self-management.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Rajput 2017 Consensus statement  on insulin therapy in chronic kidney disease
+					</span>
+				</h1>
+				<iframe src="../images/Rajput 2017_Consensus statement  on insulin therapy in chronic kidney disease.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						The impact of Insulin Degludec on Glucocorticoid-Induced Hyperglycemia in Patient with diabetes and COVID 19 infection
+					</span>
+				</h1>
+				<iframe src="../images/the_impact_of_insulin_degludec_on.6.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						ADA 2024 Abstract_Misperception of One’s Own Obesity Status - Causes and Consequences_Insights From A LargeNationwide Survey
+					</span>
+				</h1>
+				<iframe src="../images/ADA 2024 Abstract_Misperception of One’s Own Obesity Status - Causes and Consequences_Insights From A LargeNationwide Survey.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Responsible Use of Oral Corticosteroids in People with Comorbid Diabetes: An Export Consensus" (Published in JAPI, June 2024)
+					</span>
+				</h1>
+				<iframe src="../images/Responsible Use of Oral Corticosteroids in People with Comorbid Diabetes.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						SGLT2i as a First-line Antihyperglycemic in the Management of Type 2 Diabetes in the Context of Indians: A Systematic Review and Consensus" (Published in JAPI, June 2023)
+					</span>
+				</h1>
+				<iframe src="../images/SGLT2i as a First-line Antihyperglycemic in the Management of T2DM.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						First of its kind work in Tamilnadu and probably in India where idhayangal partnership with Government hospitals across state has resulted in impressive reductions in diabetic emergency admissions and improvements in glycemic control , published in Journal of Diabetology, thanks to all our wellwishers for this life-saving and life-Changing  work🙏🏻
+					</span>
+				</h1>
+				<iframe src="../images/GH_PAPER_IDHAYANGAL_2024.pdf" style="width: 100%;height: 100vh;" class="mt-3 mb-3"></iframe>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Sweet Registry 29.09.2024
+					</span>
+					<p style="font-size: 25px;font-weight: normal;" class="mb-5 mt-5">
+						Type 1 Diabetes Mellitus Screening Programme on 29-09-2024 (Sunday) 09:00 AM at Hotel Oxina Lygon, Trichy
+					</p>
+				</h1>
+				<div class="row gallery mt-3 mb-3">
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep1.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep1.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep2.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep2.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep3.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep3.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep4.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep4.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep5.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep5.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep6.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep6.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep7.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep7.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep8.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep8.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep9.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep9.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep10.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep10.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep11.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep11.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep12.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep12.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep13.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep13.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep14.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep14.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep15.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep15.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep16.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep16.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep17.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep17.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/2024sep24.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/2024sep18.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+				</div>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Walkathon 20.11.2022
+					</span>
+					<p style="font-size: 25px;font-weight: normal;" class="mb-5 mt-5">
+						We conducted a Diabetes awareness walkathon on 20-11-2022 (Sunday) at Trichy
+					</p>
+				</h1>
+				<div id="courouselhome" class="carousel slide mt-3 mb-3" data-ride="carousel">
+					<ul class="carousel-indicators">
+						<li data-target="#courouselhome" data-slide-to="0" class="active"></li>
+						<li data-target="#courouselhome" data-slide-to="1"></li>
+						<li data-target="#courouselhome" data-slide-to="2"></li>
+					</ul>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../images/gallery1.jpg" style="width: 100%;height: 100%;" alt="gallery1" width="1100" height="500">
+						</div>
+						<div class="carousel-item">
+							<img src="../images/gallery2.jpg" style="width: 100%;height: 100%;" alt="gallery2" width="1100" height="500">
+						</div>
+						<div class="carousel-item">
+							<img src="../images/gallery3.jpg" style="width: 100%;height: 100%;" alt="gallery3" width="1100" height="500">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#courouselhome" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#courouselhome" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+				<div class="row gallery mt-3 mb-3">
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery4.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery4.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery5.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery5.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery6.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery6.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery7.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery7.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery8.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery8.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery9.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery9.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery10.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery10.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery11.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery11.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery12.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery12.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery13.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery13.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery14.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery14.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery15.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery15.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery16.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery16.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery17.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery17.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery24.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery24.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+				</div>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Diabetes Educators Education Program( DEEP 2023 )
+					</span>
+					<p style="font-size: 25px;font-weight: normal;" class="mb-5 mt-5">
+						We conducted a Diabetes awareness DEEP 2023 on 26-02-2023 (Sunday) at Trichy
+					</p>
+				</h1>
+				<div class="row gallery mt-3 mb-3">
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery25.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery25.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery26.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery26.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery27.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery27.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery28.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery28.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery29.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery29.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery30.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery30.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery31.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery31.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery32.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery32.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+				</div>
+				<h1 align="center" class="mb-3 mt-3">
+					<span style="border-bottom: 3px solid limegreen;font-weight:bold;color:royalblue;">
+						Sweet Registry
+					</span>
+					<p style="font-size: 25px;font-weight: normal;" class="mb-5 mt-5">
+						We conducted a Diabetes awareness sweet registry T1DM free insulin and free insulin storage providing program on 25-02-2024 (Sunday) at Trichy
+					</p>
+				</h1>
+				<div class="row gallery mt-3 mb-3">
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery18.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery18.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery19.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery19.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery20.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery20.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery21.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery21.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery23.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery23.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery22.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery22.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery33.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery33.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery34.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery34.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery35.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery35.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery36.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery36.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<a href="../images/gallery37.jpg" target="_blank">
+							<figure>
+								<img class="img-fluid img-thumbnail" src="../images/gallery37.jpg" alt="Gallery">
+							</figure>
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="jumbotron mb-0" style="background-color: #edf9ff !important;padding-bottom: 10px;">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1 style="color: black !important;font-size: 32px;font-weight: bold;">
+						<i class="fa fa-home"></i> ADDRESS:
+					</h1>
+					<span>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							Annai Hospital
+						</p>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							Thuraiyur
+						</p>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							Trichy Tamil Nadu 621010
+						</p>
+					</span>
+				</div>
+				<div class="col-lg-6">
+					<h1 style="color: black !important;font-size: 32px;font-weight: bold;">
+						<i class="fa fa-envelope"></i> Email id:
+					</h1>
+					<span>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							<a href="mailto:metclubkmu@gmail.com" style="text-decoration: none;color: black !important;">
+								trichydct@gmail.com
+							</a>
+						</p>
+					</span>
+				</div>
+				<div class="col-lg-6">
+					<h1 style="color: black !important;font-size: 32px;font-weight: bold;">
+						<i class="fa fa-phone"></i> PHONE NO:
+					</h1>
+					<span>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							+91 98424 44036
+						</p>
+						<p style="color: black !important;font-size: 24px;line-height: 25px;margin-left: 90px;">
+							+91 99441 13233
+						</p>
+					</span>
+				</div>
+			</div>
+			<p style="font-size: 18px;text-align: center;color: black !important;">
+				&copy; <script>document.write(new Date().getFullYear())</script> DCTCON All rights reserved.
+			</p>
+		</div>
+	</footer>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".gallery").magnificPopup({
+			delegate: "a",
+			type: "image",
+			tLoading: "Loading image #%curr%...",
+			mainClass: "mfp-img-mobile",
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0, 1]
+			},
+			image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+			}
+		});
+	});
+	</script>
+	<style type="text/css">
+	#scroll-to-bottom-btn {
+		position: fixed;
+		bottom: 45px;
+		right: 20px;
+		display: block;
+		z-index: 999999;
+	}
+	#scroll-to-top-btn {
+		position: fixed;
+		bottom: 90px;
+		right: 20px;
+		display: none;
+		z-index: 999999;
+	}
+	</style>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+			   $('#scroll-to-top-btn').fadeIn();
+			}
+			else {
+			   $('#scroll-to-top-btn').fadeOut();
+			}
+			if ($(this).scrollTop() + $(this).height() === $(document).height()) {
+			   $('#scroll-to-bottom-btn').fadeOut();
+			}
+			else {
+			   $('#scroll-to-bottom-btn').fadeIn();
+			}
+		});
+
+		$('#scroll-to-bottom-btn').click(function () {
+			$('html, body').animate({ scrollTop: $(document).height() }, 3000);
+		});
+
+		$('#scroll-to-top-btn').click(function () {
+			$('html, body').animate({ scrollTop: 0 }, 3000);
+		});
+	});
+	</script>
+	<button id="scroll-to-top-btn" class="btn btn-sm btn-primary" style="text-align: center;">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 18px;height: 18px;" fill="#fff"><path d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
+	</button>
+	<button id="scroll-to-bottom-btn" class="btn btn-sm btn-primary" style="text-align: center;">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 18px;height: 18px;" fill="#fff"><path d="M2 334.5c-3.8 8.8-2 19 4.6 26l136 144c4.5 4.8 10.8 7.5 17.4 7.5s12.9-2.7 17.4-7.5l136-144c6.6-7 8.4-17.2 4.6-26s-12.5-14.5-22-14.5l-72 0 0-288c0-17.7-14.3-32-32-32L128 0C110.3 0 96 14.3 96 32l0 288-72 0c-9.6 0-18.2 5.7-22 14.5z"/></svg>
+	</button>
+</body>
+</html>
